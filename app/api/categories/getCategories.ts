@@ -9,7 +9,7 @@ import 'server-only';
 
 export async function getCategories({ parent }: { parent?: string } = {}) {
   const res = await fetch(
-    `https://app-playground-api.vercel.app/api/categories${
+    `https://delightful-beach-0001a6110.5.azurestaticapps.net/api/categories${
       parent ? `?parent=${parent}` : ''
     }`,
   );
@@ -31,7 +31,7 @@ export async function getCategories({ parent }: { parent?: string } = {}) {
 
 export async function getCategory({ slug }: { slug: string }) {
   const res = await fetch(
-    `https://app-playground-api.vercel.app/api/categories${
+    `https://delightful-beach-0001a6110.5.azurestaticapps.net/api/categories${
       slug ? `?slug=${slug}` : ''
     }`,
   );

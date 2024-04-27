@@ -8,7 +8,9 @@ import type { Review } from './review';
 import 'server-only';
 
 export async function getReviews() {
-  const res = await fetch(`https://app-playground-api.vercel.app/api/reviews`);
+  const res = await fetch(
+    `https://delightful-beach-0001a6110.5.azurestaticapps.net/api/reviews`,
+  );
 
   if (!res.ok) {
     // Render the closest `error.js` Error Boundary
