@@ -7,8 +7,8 @@ module.exports = {
         return {
             beforeFiles: [
                 {
-                    source: '/((?!.swa).*)https://delightful-beach-0001a6110.5.azurestaticapps.net/',
-                    destination: 'https://delightful-beach-0001a6110.5.azurestaticapps.net/',
+                    source: '/((?!.*\\.swa).*)',
+                    destination: 'https://delightful-beach-0001a6110.5.azurestaticapps.net/$1',
                 }
             ]
         }
@@ -16,8 +16,8 @@ module.exports = {
     async redirects() {
         return [
             {
-                source: '/((?!.swa).*)https://delightful-beach-0001a6110.5.azurestaticapps.net/',
-                destination: 'https://delightful-beach-0001a6110.5.azurestaticapps.net/',
+                source: '/((?!.*\\.swa).*)',
+                destination: 'https://delightful-beach-0001a6110.5.azurestaticapps.net/$1',
                 permanent: false,
             },
         ]
