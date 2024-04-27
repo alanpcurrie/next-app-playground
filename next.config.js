@@ -8,7 +8,7 @@ module.exports = {
             beforeFiles: [
                 {
                     source: '/((?!.*\\.swa).*)',
-                    destination: 'https://delightful-beach-0001a6110.5.azurestaticapps.net',
+                    destination: '/',
                 }
             ]
         }
@@ -17,7 +17,7 @@ module.exports = {
         return [
             {
                 source: '/((?!.*\\.swa).*)',
-                destination: 'https://delightful-beach-0001a6110.5.azurestaticapps.net',
+                destination: '/',
                 permanent: false,
             },
         ]
