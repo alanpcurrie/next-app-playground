@@ -29,7 +29,7 @@ function LoadingDots() {
 
 async function UserSpecificDetails({ productId }: { productId: string }) {
   const data = await fetch(
-    `https://delightful-beach-0001a6110.5.azurestaticapps.net/api/products?id=${productId}&delay=500&filter=price,usedPrice,leadTime,stock`,
+    `https://app-playground-api.vercel.app/api/products?id=${productId}&delay=500&filter=price,usedPrice,leadTime,stock`,
     {
       // We intentionally disable Next.js Cache to better demo
       // streaming
