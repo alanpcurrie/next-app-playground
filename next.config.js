@@ -3,24 +3,24 @@ const nextConfig = {};
 
 module.exports = {
     ...nextConfig,
-    // async rewrites() {
-    //     return {
-    //         beforeFiles: [
-    //             {
-    //                 source: '/((?!.swa).*)<YOUR MATCHING RULE>',
-    //                 destination: '<YOUR REWRITE RULE>',
-    //             }
-    //         ]
-    //     }
-    // },
-    // async redirects() {
-    //     return [
-    //         {
-    //             source: '/((?!.swa).*)<YOUR MATCHING RULE>',
-    //             destination: '<YOUR REDIRECT RULE>',
-    //             permanent: false,
-    //         },
-    //     ]
-    // },
+    async rewrites() {
+        return {
+            beforeFiles: [
+                {
+                    source: '/((?!.swa).*)https://delightful-beach-0001a6110.5.azurestaticapps.net/',
+                    destination: 'https://delightful-beach-0001a6110.5.azurestaticapps.net/',
+                }
+            ]
+        }
+    },
+    async redirects() {
+        return [
+            {
+                source: '/((?!.swa).*)https://delightful-beach-0001a6110.5.azurestaticapps.net/',
+                destination: 'https://delightful-beach-0001a6110.5.azurestaticapps.net/',
+                permanent: false,
+            },
+        ]
+    },
     output: "standalone",
 }
