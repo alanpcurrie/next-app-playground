@@ -3,6 +3,7 @@ import { AddressBar } from '#/ui/address-bar';
 import Byline from '#/ui/byline';
 import { GlobalNav } from '#/ui/global-nav';
 import { Metadata } from 'next';
+import Observability from '#/components/observability';
 
 export const metadata: Metadata = {
   title: {
@@ -47,6 +48,7 @@ export default function RootLayout({
           </div>
         </div>
       </body>
+      <Observability />
     </html>
   );
 }
