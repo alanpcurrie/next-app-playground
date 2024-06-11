@@ -9,7 +9,7 @@ export default function Observability() {
     const sdk = new HoneycombWebSDK({
       debug: true, // turn off in production
       // endpoint: "https://api.eu1.honeycomb.io/v1/traces", // uncomment to send to EU instance
-      apiKey: process.env.HNY_API_KEY, // Replace with your Honeycomb Ingest API Key
+      apiKey: process.env.NEXT_PUBLIC_HNY_API_KEY, // Replace with your Honeycomb Ingest API Key
       serviceName: 'next o11y poc', // Replace with your application name. Honeycomb will name your dataset using this variable.
       instrumentations: [getWebAutoInstrumentations()],
     });
