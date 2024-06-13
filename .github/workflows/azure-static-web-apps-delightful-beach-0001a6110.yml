@@ -45,4 +45,4 @@ jobs:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_DELIGHTFUL_BEACH_0001A6110 }}
           action: 'close'
         env:
-          DB_HOST: ${{ secrets.NEXT_PUBLIC_HNY_API_KEY }}
+          NEXT_PUBLIC_HNY_API_KEY: ${{ secrets.NEXT_PUBLIC_HNY_API_KEY }}
